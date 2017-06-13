@@ -2,7 +2,8 @@ FROM python:3-alpine
 MAINTAINER Amane Katagiri
 CMD [""]
 ENTRYPOINT ["pykick"]
-WORKDIR /app
-COPY . /app
+WORKDIR /pykick
+COPY . /pykick
+COPY ./pykick/example /app
 RUN pip install -e .
-WORKDIR /app/pykick/example
+WORKDIR /app
