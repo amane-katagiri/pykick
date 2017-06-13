@@ -19,7 +19,7 @@ Or mount `config`, `templates` or `static` directory individually.
 ```
 docker run --rm -p 8000:8000 -v /path/to/your/app/config:/app/config:ro \
     -v /path/to/your/app/templates:/app/templates:ro \
-    -v /path/to/your/app/static:/app/static:ro amane/kick-kick-go
+    -v /path/to/your/app/static:/app/static:ro amane/pykick
 ```
 
 ## Save count permanently
