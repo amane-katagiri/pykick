@@ -33,8 +33,20 @@ docker run -p 8000:8000 --link pykick-redis:redis -d amane/pykick --redis_addres
 
 ## Options
 
-Use `-h` to see all options.
+Use `--help` to see all options.
 
 ```
 docker run --rm amane/pykick --help
 ```
+
+## Use on your machine
+
+Install pykick with `pip`.
+
+```
+git clone https://github.com/amane-katagiri/pykick.git
+cd pykick
+pip install -e
+```
+
+You can run `pykick` to serve pykick on http://localhost:8000/ after installation. Use `pykick --help` to see all options.
